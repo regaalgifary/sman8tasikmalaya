@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(208, 174, 88);
+}
+
+.contact img {
+    width: 2vh;
+}
+
+.contact a {
+    margin: 1vh;
+}
+
+.contact-person {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(208, 174, 88);
+}
+
+.cp {
+    margin: 0%;
+    font-size: small;
+}
+
+header {
+    background-color: rgb(246, 212, 126);
+    display: flex;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.42);
+    -moz-box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.42);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 1vh;
+    display: flex;
+}
+
+.menu {
+    margin: 1vh;
+    display: flex;
+
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+img {
+    width: 5vh;
+}
+
+p {
+    color: rgb(47, 47, 47);
+    font-size: 2vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.event {
+    width: 100%;
+    background-color: rgb(219, 219, 219);
+}
+
+.info {
+    width: 100%;
+    background-color: rgb(255, 253, 253);
+}
+
+.info p {
+    color: rgb(47, 47, 47);
+    font-size: large;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.5s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.5s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    background-color: rgb(246, 212, 126);
+    padding: 3vh;
+}
+
+.sidebar p {
+    padding: 1vh;
+    color: rgb(47, 47, 47);
+    margin: 2vh 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.sidebar p:hover {
+    background-color: rgb(246, 212, 126);
+}
+
+.back img {
+    width: 3vh;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 2vh;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5vh;
+}
+
+.content {
+    background-image: url(assets/beranda.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.42);
+}
+
+.kontakkami {
+    background-color: white;
+    border-radius: 18px;
+    padding: 5vh;
+    margin: 2vh;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 30vh;
+    padding: 1vh;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: rgb(246, 212, 126);
+    color: #333;
+    padding: 1vh 2vh;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 2vh;
+}
+
+.submit-btn:hover {
+    background-color: rgb(208, 174, 88);
+}
+
+footer {
+    background-color: rgb(246, 206, 104);
+    color: #333;
+    text-align: center;
+    padding: 1.5vh 0;
+    font-size: 0.9rem;
+    position: relative;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: small;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header, .contact, .contact-person, .content, .berita, footer {
+        padding: 1vh;
+    }
+
+    .sidebar-header {
+        padding: 2.6vh;
+    }
+
+    .contact img {
+        width: 3vh;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    .berita h2 {
+        font-size: 1.3rem;
+    }
+
+    .news-item h3 {
+        font-size: 1rem;
+    }
+
+    .news-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header, .contact, .contact-person, .content, .berita, footer {
+        padding: 0.5vh;
+    }
+
+    img {
+        width: 4vh;
+    }
+    .info {
+        font-size: 0.9rem;
+    }
+
+    .berita h2 {
+        font-size: 1.1rem;
+    }
+
+    .news-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .news-item p {
+        font-size: 0.8rem;
+    }
+}

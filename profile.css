@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 5vh;
+}
+
+.contact, .contact-person {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(208, 174, 88);
+    padding: 1vh 0;
+}
+
+.contact img {
+    width: 2vh;
+    margin: 1vh;
+}
+
+.cp {
+    margin: 0;
+    font-size: small;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(246, 212, 126);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.42);
+    z-index: 10;
+    padding: 1vh;
+}
+
+.logo, .menu {
+    margin: 1vh;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.5s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    background-color: rgb(246, 212, 126);
+    padding: 3vh;
+}
+
+.sidebar p {
+    padding: 1vh;
+    color: rgb(47, 47, 47);
+    margin: 2vh 0;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.sidebar p:hover {
+    background-color: rgb(246, 212, 126);
+}
+
+.back img {
+    width: 3vh;
+    cursor: pointer;
+}
+
+.content {
+    padding: 2vh;
+    background-image: url(assets/beranda.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.info {
+    color: #424242;
+    padding: 2vh;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.berita {
+    margin-top: 2vh;
+    padding: 2vh;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.berita h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.news-item {
+    padding: 1vh 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-berita {
+    display: flex;
+}
+
+.news-item img {
+    width: 20vh;
+}
+
+.news-item h3 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.news-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-left: 2vh;
+}
+
+footer {
+    background-color: rgb(246, 206, 104);
+    color: #333;
+    text-align: center;
+    padding: 1.5vh 0;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.profil-container {
+    background-color: #ffffff;
+    padding: 2vh;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 2vh auto;
+    max-width: 800px;
+}
+
+.profil-content {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+.profil-content img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.profil-info {
+    font-size: 1rem;
+    color: #333;
+    border-left: 1px solid #333;
+}
+
+.profil-info p, .profil-info ul {
+    margin-bottom: 1.5vh;
+    margin-left: 2vh;
+}
+
+.profil-info ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    header, .contact, .contact-person, .content, .berita, footer {
+        padding: 1vh;
+    }
+
+    .sidebar-header {
+        padding: 2.6vh;
+    }
+
+
+    .contact img {
+        width: 3vh;
+    }
+
+    .content {
+        background-size: contain;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    .berita h2 {
+        font-size: 1.3rem;
+    }
+
+    .news-item h3 {
+        font-size: 1rem;
+    }
+
+    .news-item p {
+        font-size: 0.9rem;
+    }
+
+    .profil-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil-content img {
+        width: 80%;
+        margin-bottom: 2vh;
+    }
+
+    .profil-info {
+        text-align: center;
+        border-left: none;
+    }
+
+    .profil-info p, .profil-info ul {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header, .contact, .contact-person, .content, .berita, footer {
+        padding: 0.5vh;
+    }
+
+    img {
+        width: 4vh;
+    }
+
+    .content {
+        background-size: cover;
+    }
+
+    .info {
+        font-size: 0.9rem;
+    }
+
+    .berita h2 {
+        font-size: 1.1rem;
+    }
+
+    .news-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .news-item p {
+        font-size: 0.8rem;
+    }
+
+    .profil-content img {
+        width: 20vh;
+    }
+
+    .profil-info p, .profil-info ul {
+        font-size: 0.8rem;
+        border-left: none;
+    }
+
+    .profil-info ul {
+        padding-left: 1em;
+    }
+}

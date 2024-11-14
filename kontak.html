@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="kontak.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+<body>
+    <div class="contact">
+        <a href="https://www.instagram.com/sman_8_tasikmalaya">
+            <img src="assets/instagram-logo.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/SMAN8TASIKMALAYA">
+            <img src="assets/facebook-logo.png" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/@sman8tasikmalayaofficial">
+            <img src="assets/youtube.png" alt="YouTube">
+        </a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="nama">
+            <p><b>SMA NEGERI 8 KOTA TASIKMALAYA</b></p>
+        </div>
+        <div class="menu" onclick="toggleMenu()">
+            <img src="assets/menu.png" alt="Menu">
+        </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="back">
+                <img src="assets/right-arrow.png" onclick="toggleMenu()" alt="Back">
+            </div>
+        </div>
+        <a href="index.html"><p>Beranda</p></a>
+        <a href="profile.html"><p>Profil</p></a>
+        <a href="kontak.html"><p>Kontak</p></a>
+    </div>
+
+    <div class="content">
+        <div class="kontakkami">
+            <h2>Hubungi Kami</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SMA Negeri 8 Kota Tasikmalaya. Designed by Rega Rahmat Algifary.</p>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>
